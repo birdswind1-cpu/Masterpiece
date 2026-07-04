@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Persistence of Memory | Master Piece Art</title>
+    <link rel="stylesheet" href="external.css">
+    <style>
+        :root { --primary: #96c6e3; --glass-dark: rgba(0, 0, 0, 0.6); --glass-border: rgba(255, 255, 255, 0.15); }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; color: white; margin: 0; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('images/image14.jpg'); background-size: cover; background-attachment: fixed; min-height: 100vh; display: flex; flex-direction: column; }
+        .main-content { padding: 160px 8% 60px; flex: 1; max-width: 1000px; margin: 0 auto; }
+        .glass-panel { background: var(--glass-dark); backdrop-filter: blur(20px); border: 1px solid var(--glass-border); border-radius: 32px; padding: 50px; }
+        h1 { font-size: 3rem; margin-bottom: 20px; color: var(--primary); letter-spacing: -1px; }
+        .symbol-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px; }
+        .symbol-card { background: rgba(255,255,255,0.05); padding: 25px; border-radius: 20px; border: 1px solid var(--glass-border); }
+        .symbol-card h3 { color: var(--primary); font-size: 0.85rem; text-transform: uppercase; margin-bottom: 10px; }
+        .btn-back { display: inline-block; margin-top: 40px; background: var(--primary); color: black; padding: 15px 45px; border-radius: 50px; text-decoration: none; font-weight: 700; transition: 0.3s; }
+        .btn-back:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(150, 198, 227, 0.3); }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">Master Piece Arts</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="menu.html"><span>Menu</span></a></li>
+        <li><a href="gallery.html"><span>Gallery</span></a></li>
+        <li><a href="contact.html"><span>Contact</span></a></li>
+        <li><a href="login.html" class="active"><span>Login</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="glass-panel">
+            <h1>The Persistence of Memory</h1>
+            <p style="font-size: 1.15rem; line-height: 1.7; opacity: 0.85;">Salvador Dalí's 1931 Surrealist masterwork explores the fluidity of time. The melting watches suggest that in the dream state, rigid human measurements of time become meaningless and soft.</p>
+            <div class="symbol-grid">
+                <div class="symbol-card"><h3>Melting Clocks</h3><p>The irrelevance of rigid time in dreams.</p></div>
+                <div class="symbol-card"><h3>The Ants</h3><p>A symbol of decay and organic passage of time.</p></div>
+                <div class="symbol-card"><h3>Sleeping Figure</h3><p>A distorted self-portrait of Dalí in a subconscious state.</p></div>
+            </div>
+            <a href="menu.html" class="btn-back">Back to Collection</a>
+        </div>
+    </main>
+    <footer>&copy; 2026 Master Piece Art | All Rights Reserved</footer>
+</body>
+</html>

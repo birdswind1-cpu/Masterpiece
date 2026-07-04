@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunflowers | Master Piece Art</title>
+    <link rel="stylesheet" href="external.css">
+    <style>
+        :root { --primary: #f6d365; --glass: rgba(0, 0, 0, 0.6); }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; color: white; margin: 0; background: linear-gradient(135deg, #f6d365, #fda085); min-height: 100vh; display: flex; flex-direction: column; }
+        .content { flex: 1; max-width: 900px; margin: 140px auto 60px; background: var(--glass); backdrop-filter: blur(25px); border-radius: 40px; overflow: hidden; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 30px 60px rgba(0,0,0,0.3); }
+        .hero-banner { height: 350px; background: url('images/image15.webp') center; background-size: cover; }
+        .text-pad { padding: 50px; }
+        h1 { color: var(--primary); font-size: 3rem; margin-bottom: 20px; letter-spacing: -1px; }
+        p { line-height: 1.8; opacity: 0.9; font-size: 1.1rem; }
+        .btn { background: var(--primary); color: #854d0e; padding: 16px 45px; border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block; margin-top: 30px; transition: 0.3s; }
+        .btn:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">Master Piece Arts</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="menu.html"><span>Menu</span></a></li>
+        <li><a href="gallery.html"><span>Gallery</span></a></li>
+        <li><a href="contact.html"><span>Contact</span></a></li>
+        <li><a href="login.html" class="active"><span>Login</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="hero-banner"></div>
+        <div class="text-pad">
+            <h1>Sunflowers</h1>
+            <p>Vincent van Gogh's series captures the vitality of nature through bold yellow hues and thick impasto brushwork. For Van Gogh, the sunflower was a symbol of gratitude and the light of the south.</p>
+            <a href="menu.html" class="btn">Back to Collection</a>
+        </div>
+    </div>
+    <footer>&copy; 2026 Master Piece Art | All Rights Reserved</footer>
+</body>
+</html>

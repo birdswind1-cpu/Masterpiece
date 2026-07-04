@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girl with a Pearl Earring | Master Piece Art</title>
+    <link rel="stylesheet" href="external.css">
+    <style>
+        :root { --primary: #96c6e3; --glass: rgba(0, 0, 0, 0.65); }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; color: white; margin: 0; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/image4.jpg'); background-size: cover; background-attachment: fixed; min-height: 100vh; display: flex; flex-direction: column; }
+        .main { padding: 140px 8% 60px; flex: 1; display: flex; flex-direction: column; gap: 40px; align-items: center; }
+        .box { background: var(--glass); backdrop-filter: blur(25px); border: 1px solid rgba(255,255,255,0.15); border-radius: 40px; padding: 45px; max-width: 900px; display: flex; gap: 45px; align-items: center; }
+        .box:nth-child(even) { flex-direction: row-reverse; }
+        .box img { width: 300px; border-radius: 24px; box-shadow: 0 30px 60px rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.1); }
+        h2 { color: var(--primary); font-size: 2.2rem; margin-top: 0; letter-spacing: -1px; }
+        p { line-height: 1.8; opacity: 0.85; font-size: 1.1rem; }
+        .btn { background: var(--primary); color: black; padding: 16px 45px; border-radius: 50px; text-decoration: none; font-weight: 700; transition: 0.3s; margin-top: 20px; }
+        .btn:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">Master Piece Arts</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="menu.html"><span>Menu</span></a></li>
+        <li><a href="gallery.html"><span>Gallery</span></a></li>
+        <li><a href="contact.html"><span>Contact</span></a></li>
+        <li><a href="login.html" class="active"><span>Login</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="box">
+            <img src="images/image1.jpg" alt="Vermeer Masterpiece">
+            <div>
+                <h2>Mona Lisa of the North</h2>
+                <p>Johannes Vermeer's 1665 tronie is celebrated for its mastery of light and the enigmatic gaze of the young subject, accented by her luminous pearl.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/image2.jpg" alt="The Gaze">
+            <div>
+                <h2>Sublime Intimacy</h2>
+                <p>The subtle use of chiaroscuro creates a deep three-dimensional effect, pulling the viewer into the girl's intimate world.</p>
+            </div>
+        </div>
+        <a href="menu.html" class="btn">Back to Collection</a>
+    </div>
+    <footer>&copy; 2026 Master Piece Art | All Rights Reserved</footer>
+</body>
+</html>

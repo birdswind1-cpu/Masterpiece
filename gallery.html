@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Gallery | Master Piece Art</title>
+  <link rel="stylesheet" href="external.css">
+  
+  <style>
+    /* --- SHARED BRANDING SYSTEM --- */
+    :root {
+      --primary: #96c6e3;
+      --glass: rgba(255, 255, 255, 0.1);
+      --glass-dark: rgba(0, 0, 0, 0.5);
+      --glass-border: rgba(255, 255, 255, 0.15);
+      --text-white: #ffffff;
+      --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text-white);
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                  url("images/image14.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* --- ADVANCED GALLERY LAYOUT --- */
+    .gallery-container {
+      padding: 140px 8% 60px;
+      flex: 1;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-header h2 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      letter-spacing: -1px;
+    }
+
+    .section-header p {
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .gallery-item {
+      background: var(--glass-dark);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+      padding: 15px;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-12px);
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--primary);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .img-frame {
+      width: 100%;
+      height: 220px;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 15px;
+      border: 1px solid var(--glass-border);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.15);
+    }
+
+    .caption-box {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .work-title {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 4px;
+      display: block;
+    }
+
+    .artist-label {
+      font-size: 0.8rem;
+      opacity: 0.6;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">Master Piece Arts</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="menu.html"><span>Menu</span></a></li>
+        <li><a href="gallery.html"><span>Gallery</span></a></li>
+        <li><a href="contact.html"><span>Contact</span></a></li>
+        <li><a href="login.html" class="active"><span>Login</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="gallery-container">
+    <div class="section-header">
+      <p>Masterpieces & Portraits</p>
+      <h2>Artistic Collection</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <div class="img-frame"><img src="images/image17.jpg" alt="Creation of Adam"></div>
+        <div class="caption-box"><span class="work-title">The Creation of Adam</span><span class="artist-label">Michelangelo</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="img-frame"><img src="images/image8.jpg" alt="Mona Lisa"></div>
+        <div class="caption-box"><span class="work-title">Mona Lisa</span><span class="artist-label">Leonardo da Vinci</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="img-frame"><img src="images/image6.webp" alt="Starry Night"></div>
+        <div class="caption-box"><span class="work-title">Starry Night</span><span class="artist-label">Vincent van Gogh</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="img-frame"><img src="images/image1.jpg" alt="Pearl Earring"></div>
+        <div class="caption-box"><span class="work-title">Girl with a Pearl Earring</span><span class="artist-label">Johannes Vermeer</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="img-frame"><img src="images/image10.jpg" alt="American Gothic"></div>
+        <div class="caption-box"><span class="work-title">American Gothic</span><span class="artist-label">Grant Wood</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="img-frame"><img src="images/image12.jpg" alt="Night Watch"></div>
+        <div class="caption-box"><span class="work-title">The Night Watch</span><span class="artist-label">Rembrandt</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="img-frame"><img src="images/image15.webp" alt="Sunflowers"></div>
+        <div class="caption-box"><span class="work-title">Sunflowers</span><span class="artist-label">Vincent van Gogh</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="img-frame"><img src="images/image16.jpg" alt="Persistence of Memory"></div>
+        <div class="caption-box"><span class="work-title">The Persistence of Memory</span><span class="artist-label">Salvador Dalí</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="img-frame"><img src="images/pic5.jpg" alt="Da Vinci"></div>
+        <div class="caption-box"><span class="work-title">Self Portrait</span><span class="artist-label">Leonardo da Vinci</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="img-frame"><img src="images/michalanlego.jpg" alt="Michelangelo Portrait"></div>
+        <div class="caption-box"><span class="work-title">Self Portrait</span><span class="artist-label">Michelangelo</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="img-frame"><img src="images/image7.webp" alt="Van Gogh Portrait"></div>
+        <div class="caption-box"><span class="work-title">Self Portrait (1887)</span><span class="artist-label">Vincent van Gogh</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="img-frame"><img src="images/rambrant.webp"></div>
+        <div class="caption-box"><span class="work-title">Self Portrait</span><span class="artist-label">Rembrandt van Rijn</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="img-frame"><img src="images/johhaness.jpg" alt="Vermeer Portrait"></div>
+        <div class="caption-box"><span class="work-title">Self Portrait</span><span class="artist-label">Johannes Vermeer</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="img-frame"><img src="images/grantwood.webp" alt="Grant Wood Portrait"></div>
+        <div class="caption-box"><span class="work-title">Self Portrait</span><span class="artist-label">Grant Wood</span></div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="img-frame"><img src="images/salvali.jpg" alt="Dali Portrait"></div>
+        <div class="caption-box"><span class="work-title">Self Portrait</span><span class="artist-label">Salvador Dalí</span></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 Master Piece Art | All Rights Reserved
+  </footer>
+
+</body>
+</html>

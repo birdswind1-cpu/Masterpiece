@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Gothic | Master Piece Art</title>
+    <link rel="stylesheet" href="external.css">
+    <style>
+        :root { --accent: #96c6e3; --glass: rgba(0, 0, 0, 0.75); }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; color: white; margin: 0; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://wallpaperaccess.com/full/10379244.jpg'); background-size: cover; background-attachment: fixed; min-height: 100vh; display: flex; flex-direction: column; }
+        .card-wrap { flex: 1; max-width: 800px; margin: 160px auto 60px; background: var(--glass); backdrop-filter: blur(25px); border-radius: 40px; padding: 60px; border: 1px solid rgba(255,255,255,0.1); text-align: center; }
+        .art-img { width: 320px; border-radius: 20px; margin-bottom: 30px; border: 8px solid white; box-shadow: 0 30px 60px rgba(0,0,0,0.5); transition: 0.3s; }
+        .art-img:hover { transform: translateY(-10px); }
+        h1 { font-size: 3rem; margin-bottom: 10px; color: var(--accent); letter-spacing: -1px; }
+        p { line-height: 1.8; opacity: 0.8; font-size: 1.1rem; margin-bottom: 30px; }
+        .btn { background: var(--accent); color: black; padding: 16px 45px; border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block; transition: 0.3s; }
+        .btn:hover { box-shadow: 0 10px 20px rgba(150, 198, 227, 0.3); }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">Master Piece Arts</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="menu.html"><span>Menu</span></a></li>
+        <li><a href="gallery.html"><span>Gallery</span></a></li>
+        <li><a href="contact.html"><span>Contact</span></a></li>
+        <li><a href="login.html" class="active"><span>Login</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="card-wrap">
+        <img src="images/image10.jpg" class="art-img" alt="American Gothic">
+        <h1>American Gothic</h1>
+        <p>Grant Wood's 1930 masterpiece captures the resilience of rural America, becoming an indelible symbol of the pioneer spirit through its precise, realistic style.</p>
+        <a href="menu.html" class="btn">Back to Collection</a>
+    </div>
+    <footer>&copy; 2026 Master Piece Art | All Rights Reserved</footer>
+</body>
+</html>

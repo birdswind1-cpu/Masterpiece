@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starry Night | Master Piece Art</title>
+    <link rel="stylesheet" href="external.css">
+    <style>
+        :root { --primary: #96c6e3; --glass-dark: rgba(0, 0, 0, 0.5); --glass-border: rgba(255, 255, 255, 0.15); }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; color: white; margin: 0; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://img.freepik.com/premium-photo/modern-art-gallery-with-glass-wall-hd-wall-mockup-1920-1080-background_1012843-336.jpg'); background-size: cover; background-attachment: fixed; min-height: 100vh; display: flex; flex-direction: column; }
+        .main-content { padding: 140px 8% 60px; flex: 1; display: flex; flex-direction: column; align-items: center; gap: 40px; }
+        .hero-img { width: 100%; max-width: 900px; height: 400px; object-fit: cover; border-radius: 24px; border: 1px solid var(--glass-border); box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+        .info-panel { background: var(--glass-dark); backdrop-filter: blur(20px); border: 1px solid var(--glass-border); border-radius: 32px; padding: 40px; max-width: 900px; line-height: 1.8; }
+        .info-panel h2 { color: var(--primary); border-bottom: 1px solid var(--glass-border); padding-bottom: 10px; font-size: 2rem; }
+        .artist-flex { display: flex; gap: 30px; align-items: center; margin-top: 30px; }
+        .artist-flex img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary); }
+        .btn-back { background: var(--primary); color: black; padding: 14px 40px; border-radius: 50px; text-decoration: none; font-weight: 700; transition: 0.3s; }
+        .btn-back:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">Master Piece Arts</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="menu.html"><span>Menu</span></a></li>
+        <li><a href="gallery.html"><span>Gallery</span></a></li>
+        <li><a href="contact.html"><span>Contact</span></a></li>
+        <li><a href="login.html" class="active"><span>Login</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <img src="images/image6.webp" class="hero-img" alt="Starry Night">
+        <div class="info-panel">
+            <h2>The Celestial Canvas</h2>
+            <p>A masterpiece of Post-Impressionism, the sky is filled with swirling blue patterns, a glowing crescent moon, and eleven bright stars. Painted in 1889 during his stay at the asylum in Saint-Rémy-de-Provence.</p>
+            <div class="artist-flex">
+                <img src="images/image7.webp" alt="Van Gogh">
+                <div>
+                    <h3>Vincent van Gogh</h3>
+                    <p>It reflects his inner turmoil and his deep, spiritual longing for connection with nature through intense colors and dynamic composition.</p>
+                </div>
+            </div>
+        </div>
+        <a href="menu.html" class="btn-back">Back to Collection</a>
+    </main>
+    <footer>&copy; 2026 Master Piece Art | All Rights Reserved</footer>
+</body>
+</html>

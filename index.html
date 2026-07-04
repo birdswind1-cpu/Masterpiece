@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    :root {
+  --primary: #96c6e3;
+  --glass: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --text-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--text-white);
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+              url("images/image14.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-btn {
+  color: white !important;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600 !important;
+}
+
+/* --- Hero Content --- */
+.hero-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+#cont {
+  text-align: center;
+  max-width: 700px;
+  padding: 3rem;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  color: var(--primary);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#cont h2 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+#cont p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.main-btn {
+  display: inline-block;
+  background: var(--primary);
+  color: #000;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.main-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(150, 198, 227, 0.3);
+}
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master Piece Art | Gallery</title>
+  <link rel="stylesheet" href="external.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Master Piece Arts</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="menu.html"><span>Menu</span></a></li>
+        <li><a href="gallery.html"><span>Gallery</span></a></li>
+        <li><a href="contact.html"><span>Contact</span></a></li>
+        <li><a href="loginpage.html" class="active"><span>Login</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero-section">
+    <div id="cont">
+      <span class="subtitle">Curated Collection</span>
+      <h2>Welcome to the <br>Online Art Gallery</h2>
+      <p>Explore a world of masterpieces and discover your next favorite art style.</p>
+      <div class="cta-group">
+        <a href="menu.html" class="main-btn">Explore Gallery</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Master Piece Art | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

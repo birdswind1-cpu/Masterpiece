@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master Piece Art | Online Gallery</title>
+  <style>
+    /* --- CSS VARIABLES & RESET --- */
+    :root {
+      --primary: #96c6e3;
+      --glass: rgba(255, 255, 255, 0.1);
+      --glass-dark: rgba(0, 0, 0, 0.4);
+      --glass-border: rgba(255, 255, 255, 0.15);
+      --text-white: #ffffff;
+      --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text-white);
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                  url("images/image14.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.6;
+    }
+
+    .login-btn {
+  color: white !important;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600 !important;
+}
+
+    /* --- HERO SECTION (INDEX) --- */
+    .hero {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 20px 60px;
+    }
+
+    .hero-content {
+      text-align: center;
+      max-width: 800px;
+      padding: 3.5rem;
+      background: var(--glass-dark);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--glass-border);
+      border-radius: 32px;
+    }
+
+    .hero-content h2 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      line-height: 1.1;
+    }
+
+    /* --- GALLERY GRID (MENU) --- */
+    .menu-section {
+      padding: 120px 8% 60px;
+    }
+
+    .glass-panel {
+      background: var(--glass-dark);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--glass-border);
+      border-radius: 32px;
+      padding: 40px;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .modern-select {
+      background: var(--glass-dark);
+      color: white;
+      border: 1px solid var(--glass-border);
+      padding: 12px 20px;
+      border-radius: 12px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      position: relative;
+      height: 300px;
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+      text-decoration: none;
+      color: white;
+      background-size: cover;
+      background-position: center;
+      transition: var(--transition);
+      border: 1px solid var(--glass-border);
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.85));
+      z-index: 1;
+    }
+
+    .card span {
+      position: relative;
+      z-index: 2;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      border-color: var(--primary);
+    }
+
+    /* --- BUTTONS --- */
+    .main-btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #000;
+      text-decoration: none;
+      padding: 1.1rem 2.8rem;
+      border-radius: 50px;
+      font-weight: 700;
+      transition: var(--transition);
+    }
+
+    .main-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(150, 198, 227, 0.4);
+    }
+
+    /* --- ARTWORK DATA --- */
+    .mona { background-image: url("images/pic1.jpg"); }
+    .starry { background-image: url("images/image6.webp"); }
+    .pearl { background-image: url("images/image1.jpg"); }
+    .memory { background-image: url("images/image16.jpg"); }
+    .adam { background-image: url("images/image17.jpg"); }
+    .nightwatch { background-image: url("images/image12.jpg"); }
+    .gothic { background-image: url("images/image10.jpg"); }
+    .sunflowers { background-image: url("images/image15.webp"); }
+  </style>
+  <link rel="stylesheet" href="external.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">Master Piece Arts</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="menu.html"><span>Menu</span></a></li>
+        <li><a href="gallery.html"><span>Gallery</span></a></li>
+        <li><a href="contact.html"><span>Contact</span></a></li>
+        <li><a href="loginpage.html" class="active"><span>Login</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="menu-section">
+    <div class="glass-panel">
+      <div class="controls">
+        <h2>The Collection</h2>
+        <select class="modern-select" onchange="location = this.value;">
+          <option value="">Search Masterpieces...</option>
+          <option value="MonaLisa.html">Mona Lisa</option>
+          <option value="starry.html">Starry Night</option>
+          <option value="project.html">Girl with a Pearl Earring</option>
+          <option value="Painting1.html">The Persistence of Memory</option>
+          <option value="Painting2.html">The Creation of Adam</option>
+          <option value="Thenightwatch.html">The Night Watch</option>
+          <option value="Grantwood.html">American Gothic</option>
+          <option value="sunflower.html">Sunflowers</option>
+        </select>
+      </div>
+
+      <div class="gallery-grid">
+        <a href="MonaLisa.html" class="card mona"><span>Mona Lisa</span></a>
+        <a href="starry.html" class="card starry"><span>Starry Night</span></a>
+        <a href="project.html" class="card pearl"><span>Girl with a Pearl Earring</span></a>
+        <a href="Painting1.html" class="card memory"><span>The Persistence of Memory</span></a>
+        <a href="Painting2.html" class="card adam"><span>The Creation of Adam</span></a>
+        <a href="Thenightwatch.html" class="card nightwatch"><span>The Night Watch</span></a>
+        <a href="Grantwood.html" class="card gothic"><span>American Gothic</span></a>
+        <a href="sunflower.html" class="card sunflowers"><span>Sunflowers</span></a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 Master Piece Art | All Rights Reserved
+  </footer>
+
+</body>
+</html>
